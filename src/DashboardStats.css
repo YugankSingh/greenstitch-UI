@@ -1,0 +1,137 @@
+#dashboard-stats {
+	padding: 20px;
+	padding-top: 40px;
+	height: calc( 100% - 66px );
+	box-sizing: border-box;
+	overflow: scroll;
+	/* overflow: hidden; */
+}
+
+#dashboard-stats > #small-cards {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 20px;
+	column-gap: 20px;
+}
+#dashboard-stats .small-card {
+	background: white;
+	display: inline-block;
+	padding: 20px;
+	border-radius: 10px;
+	width: 200px;
+	min-width: 230px;
+	flex-grow: 1;
+}
+
+.small-card p {
+	margin: 0;
+	font-weight: 400;
+}
+
+.card-header {
+	line-height: 26px;
+	color: #5f6980;
+}
+
+.card-data {
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 40px;
+	color: #282828;
+}
+
+.card-co2 {
+	line-height: 20px;
+	color: #929292;
+}
+.card-data-change {
+	background-color: red;
+	display: inline-block;
+	margin-top: 30px !important;
+	padding: 5px 17px;
+	font-size: 12px;
+	border-radius: 17px;
+}
+
+.green {
+	background: #dcfff5;
+	color: #20c997;
+}
+.red {
+	background: #ffdcdc;
+	color: #c92020;
+}
+.grey {
+	background: #f2f4f7;
+	color: #5f6980;
+}
+
+#big-cards {
+	display: flex;
+	flex-direction: row;
+	column-gap: 20px;
+	flex-wrap: wrap;
+}
+
+.big-card {
+	background-color: white;
+	height: 500px;
+	padding: 20px;
+	margin: 20px 0;
+	box-sizing: border-box;
+	max-width: 800px;
+}
+
+.bar-graph-chart {
+	height: 300px;
+	transform: translateX(-40px);
+}
+
+.bar-graph {
+	width: 100px;
+	flex-grow: 10;
+	min-width: 530px;
+}
+.pie-graph {
+	min-width: 280px;
+	width: 100px;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.pie-graph .legend{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 300px;
+}
+.pie-graph .legend .legend-element{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+.pie-graph > h1{
+	margin-bottom: 0;
+}
+.pie-graph-chart{
+	height: 10px;
+	flex-grow: 1;
+	width: 100%;
+}
+
+.legend {
+	display: flex;
+	row-gap: 15px;
+	column-gap: 25px;
+	margin-bottom: 20px;
+}
+.legend-mark {
+	display: inline-block;
+	height: 13px;
+	width: 13px;
+	margin-right: 4px;
+	border-radius: 50%;
+}

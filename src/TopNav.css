@@ -1,0 +1,35 @@
+#topnav {
+	background-color: white;
+	height: 66px;
+	box-sizing: border-box;
+	padding: 10px 32px;
+	display: flex;
+	align-items: center;
+	column-gap: 30px;
+}
+
+#topnav > .search {
+	height: 100%;
+	box-sizing: border-box;
+	border: 1px #eaecf0 solid;
+	border-radius: 6px;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	padding: 0 10px 0 20px;
+	column-gap: 10px;
+}
+
+
+.search > input {
+	border: none;
+	height: 100%;
+	/* background-color: red; */
+	flex-grow: 1;
+	box-sizing: border-box;
+}
+
+.search > img {
+	box-sizing: border-box;
+	height: 40%;
+}
